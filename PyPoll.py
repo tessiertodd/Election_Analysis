@@ -9,19 +9,16 @@
 import csv
 import os
 
-# Assign a variable for file to load with path (indirect method)
+# Assign a variable to load a file from a path (indirect method being used)
 file_to_load = os.path.join("Resources", "election_results.csv")
 
-# Create a filename variable to a direct or indirect path to the file.
+# Create a filename variable for a path to save to a file (indirect method being used)
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 #Open the election results and read the file
 with open(file_to_load) as election_data:
-
-    # To do: read and anlalyze data here
-    
     # Read the file object with the reader function.
-    file_reader = csv.reader(election_data)
+    file_reader = csv.reader(election_data)  
 
     # Read and print the header row.
     headers = next(file_reader)
