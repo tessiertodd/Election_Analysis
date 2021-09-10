@@ -28,6 +28,10 @@ The analysis shows the following:
   - Diana DeGette with 73.8% of votes (272,892 votes)
 
 ## Challenge Overview
-
+Election Board needed a little more information.  They wanted to better understand voter turnout by county.
 
 ## Challenge Summary
+Denver had the largest number of voters out of the total voters by a significant percentage with 82.8% (306,055) of the votes coming from that county.
+Jefferson county had 10.5% of voters (38,855) and Arapahoe had 6.7% (24,801).
+
+On additional piece of information that would be helpful would be if we have the number of eligible voters in each county.  With this additional information, we could calculate the % of voter turnout vs. eligible voters which may show which counties had the best voter turnout.
