@@ -55,6 +55,17 @@ with open(file_to_load) as election_data:
         # Add a vote to that candidate's count.
         candidate_votes[candidate_name] += 1
 
+    #Save the results to our text file.
+    with open(file_to_save, "w") as txt_file:
+        election_results=(
+            f"\nElection Results\n"
+            f"----------------------------\n"
+            f"Total Votes: {total_votes:,}\n"
+            f"----------------------------\n")
+        print(election_results, end="")
+        # save final vote count to the text file
+        txt_file.write(election_results)
+
 # Determine the % of votes for each candidate
 for candidate_name in candidate_votes:
     # Get vote count of a candidate
