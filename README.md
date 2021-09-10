@@ -13,13 +13,14 @@ Two Board of Elections employees (Tom & Seth) are looking for some help to calcu
 
 ## Summary
 The analysis shows the following:
-- There were 369,711 votes cast.
-- Cadidate names were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
-
-- Results per candidate:
+- There were 369,711 votes cast in the election.
+- County names where voting took place, % votes of each and number of votes
+  - Jefferson had 10.5% of votes (38,855 votes)
+  - Denver had 82.8% of votes (306,055 votes)
+  - Arapahoe had 6.7% of votes (24,801 votes)
+ ![Table_County_Names_Count](
+  
+- Candidate names, % of total votes each had and number of votes
   - Charles Casper Stockham 23.0% of votes (85,213 votes)
   - Diana DeGette 73.8% of votes (272,892 votes)
   - Raymon Anthony Doane 3.1% of votes (11,606 votes)
@@ -28,10 +29,19 @@ The analysis shows the following:
   - Diana DeGette with 73.8% of votes (272,892 votes)
 
 ## Challenge Overview
-Election Board needed a little more information.  They wanted to better understand voter turnout by county.
+Election Board needed some information beyond the information by candidate they had already received.  They wanted to better understand voter split % by county and vote counts.
 
 ## Challenge Summary
 Denver had the largest number of voters out of the total voters by a significant percentage with 82.8% (306,055) of the votes coming from that county.
 Jefferson county had 10.5% of voters (38,855) and Arapahoe had 6.7% (24,801).
 
-On additional piece of information that would be helpful would be if we have the number of eligible voters in each county.  With this additional information, we could calculate the % of voter turnout vs. eligible voters which may show which counties had the best voter turnout.
+Diana DeGette was the winning candidate who had 272,982 votes which was 73.8% of the total votes.
+
+An additional piece of information that would be helpful would be if we have the number of eligible voters in each county.  With this additional information, we could calculate the % of voter turnout vs. eligible voters which may show which counties had the best voter turnout.  This information may help the Election Board in future elections help push in the right counties to increase the voter turnout for future elections.
+
+## Election-Audit Summary:
+This script has been setup in such a way that we could adapt for other elections.  We could use this same code to analyze election information where there are 10 candidates and 20 counties. Given the approach to setting up lists and dictionaries without defining a specific number, we can have data with any number of candidates and/or counties without us needing to adjust the code.
+
+If the data also contained Postal Codes for example, we could add code like we did for the counties for postal codes to get a sense of how many votes were cast in these smaller geographic regions. Ideally we could leverage dictionaries within dictionaries to understand the voting split between postal codes within a county. Again, if we had eligible voter numbers by county and postal code that would help you understand where voter turnout might be low.
+
+We could also leverage the ability to build dictionaries within dictionaries to build code to provide understanding on % of people (and number) who voted for each candidate within each county.  This would help you better understand where support for certain candidates lies between the counties. 
